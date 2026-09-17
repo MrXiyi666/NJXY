@@ -1,0 +1,9 @@
+[
+null,
+{"id":1,"expanded":true,"name":"家园","order":1,"parentId":0,"scrollX":411.55555555555554,"scrollY":320.8888888888889},
+{"id":2,"expanded":false,"name":"房间","order":2,"parentId":1,"scrollX":411.55555555555554,"scrollY":320.8888888888889},
+{"id":3,"expanded":true,"name":"枫林镇","order":4,"parentId":0,"scrollX":0,"scrollY":0,"quick":false},
+{"id":4,"expanded":false,"name":"森林","order":3,"parentId":1,"scrollX":0,"scrollY":0,"quick":false},
+{"id":5,"expanded":false,"name":"甜蜜小屋","order":5,"parentId":3,"scrollX":0,"scrollY":0,"quick":false},
+{"id":6,"expanded":false,"name":"开心小屋","order":6,"parentId":3,"scrollX":0,"scrollY":0,"quick":false}
+]

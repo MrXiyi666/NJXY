@@ -1,2 +1,4 @@
 # NJXY
 RPGmakerMZ 开发制作的 农场小游戏
+
+游戏网址 http://mrxiyi.top/njxy/index.html 一个通用的存档 个人的虚拟主机搭建 随便玩 

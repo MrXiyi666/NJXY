@@ -18,5 +18,6 @@ var $plugins =
 {"name":"Fun_TitleBgmWaiting","status":true,"description":"开始游戏标题界面 等待音乐播放完毕在弹出游戏窗口","parameters":{}},
 {"name":"Fun_Seed_ID","status":true,"description":"种子编号","parameters":{}},
 {"name":"Fun_MapShow_Seed_ID","status":true,"description":"地图上显示当前种子名称","parameters":{}},
-{"name":"Fun_EventLocation","status":true,"description":"保存地图上的事件位置","parameters":{}}
+{"name":"Fun_EventLocation","status":true,"description":"保存地图上的事件位置","parameters":{}},
+{"name":"Fun_CloudSave","status":true,"description":"云存档功能","parameters":{}}
 ];

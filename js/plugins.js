@@ -11,7 +11,6 @@ var $plugins =
 {"name":"Fun_Event_Plant","status":true,"description":"农作物的编号记录","parameters":{}},
 {"name":"Fun_Event_Var","status":true,"description":"事件变量","parameters":{}},
 {"name":"Fun_MapName","status":true,"description":"地图名字右下角","parameters":{}},
-{"name":"Fun_CloudSave","status":true,"description":"云存档功能","parameters":{}},
 {"name":"Fun_Event_Glow","status":true,"description":"一个可以发光的事件","parameters":{}},
 {"name":"Fun_Map_CoolBar","status":true,"description":"采集进度条显示。","parameters":{}},
 {"name":"Fun_MessWindow","status":true,"description":"消息窗口 全局可用 。","parameters":{}},

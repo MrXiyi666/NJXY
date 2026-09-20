@@ -1,4 +1,4 @@
-# NJXY
+# 农家小院
 RPGMakerMZ 开发制作的 农场小游戏
 
 游戏网址 http://mrxiyi.top/njxy/index.html 

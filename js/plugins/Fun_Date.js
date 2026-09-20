@@ -58,43 +58,6 @@ function isPassNextDay(date) {
 
 (() => {
 
-let url = "http://mrxiyi.top/fun_date.php";
-
-// 获取服务器时间
-async function getServerTime() {
-    try{
-        const fetchPromise = fetch(url);
-		// 1000 = 1秒
-		const timeoutPromise = new Promise((_, reject) => {
-			setTimeout(() => reject(new Error("请求超时")), 700);
-		});
-		const res = await Promise.race([fetchPromise, timeoutPromise]);
-        if(!res.ok) throw new Error("http错误:"+res.status);
-        // 解析json，对应你php echo输出的数据
-        const data = await res.json();
-        currentStamp = data.currentStamp;
-		year = data.year;
-		month = data.month;
-		day = data.day;
-		hour = data.hour;
-		minute = data.minute;
-		second = data.second;
-		ms = data.ms;
-		//console.log("服务器时间", getDate());
-    }catch(err){
-        // 请求失败 → 降级读取本地时间
-        //console.warn("获取服务器时间失败，切换本地时间",err);
-        getLocalTime();
-		//console.log("本地时间", getDate());
-    }finally{
-        // 无论成败，解锁状态
-        isPHP = false;
-		buffer = 0;
-		//console.log("重置");
-		//console.log("分钟", minute);
-    }
-}
-
 
 function getLocalTime(){
 	//只获取一次时间
@@ -112,8 +75,7 @@ function getLocalTime(){
 }
 
 //玩家是否移动切换开关3号
-let buffer = 0;
-let isPHP = false;
+let buffer = 0; //60帧读取一次时间
 const _Scene_Base_prototype_update = Scene_Base.prototype.update;
 Scene_Base.prototype.update = function() {
 	_Scene_Base_prototype_update.call(this);
@@ -126,10 +88,8 @@ Scene_Base.prototype.update = function() {
 		$gameSwitches.setValue(3, true);
 	}
 	if(buffer > 60){
-		if(isPHP === false){
-			isPHP = true;
-			getServerTime();
-		}
+		getLocalTime();
+		buffer = 0;
 	}else{
 		buffer++;
 	}

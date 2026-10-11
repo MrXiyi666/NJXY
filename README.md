@@ -1,6 +1,13 @@
 # 农家小院
 RPGMakerMZ 开发制作的 农场小游戏
 
+游戏网址 http://mrxiyi.top/njxy/index.html 
+
+一个通用的存档 个人的虚拟主机搭建 随便玩  不论是电脑浏览器 Android浏览器 任何浏览器 内核版本不是太低的话 都可以运行
+
+我的虚拟主机 每年一百块钱 存储了我开发的RPGMaker游戏 没有其他用途
+
+
 禁用 Fun_CloudSave.js 插件即可实现本地存储 
 
 开发工具 RPGMakerMZ v1.10.0
